@@ -26,13 +26,13 @@ if '@gmail.com' in user_email:
 
     ''' User Google app password '''
     user_password = getpass.getpass()
-    
+
     ''' Login using user crendentials '''
     imap = imaplib.IMAP4_SSL('imap.gmail.com')
     imap.login(user_email, user_password)
 
     ''' Selecting items '''
-    imap.select('Inbox')
+    imap.select('INBOX')
 
     ''' Getting message ids '''
     status, get_message = imap.search(None, 'ALL')
@@ -43,11 +43,17 @@ if '@gmail.com' in user_email:
     ''' Working on emails '''
     print('Deleting mails')
     count = 1
+
     for mail in messages:
         imap.store(mail, '+FLAGS', '\\Deleted')
 
-        print(count, 'mail(s) Deleted')
-        count += 1
+        if count == 1:
+            print(count, 'mail Deleted')
+            count += 1
+        else:
+            print(count, 'mails Deleted')
+            count += 1
+
     print('All selected mail has been deleted')
 
     ''' Deleting mails '''
