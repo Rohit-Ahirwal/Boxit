@@ -4,7 +4,6 @@ import getpass
 
 os.system('clear')
 print('\033[1;92mCreator: Rohit Ahirwal')
-os.system('figlet -ctf slant "BOXIT"')
 print('Version: 1.0\033[1;0m')
 
 ''' User email '''
