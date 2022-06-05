@@ -19,6 +19,9 @@ Now clone this respiratory by command
 ```
 git clone https://github.com/Rohit-Ahirwal/Boxit
 ```
+```
+apt install figlet
+```
 ## Usages
 befor Usages you need a google app password check documentation
 for password [Click here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://support.google.com/accounts/answer/185833%3Fhl%3Den&ved=2ahUKEwi154jY8uf2AhXk7XMBHVH8BfsQFnoECAgQAQ&usg=AOvVaw2qwXmKRTjsa0k-q38HqJIX)
