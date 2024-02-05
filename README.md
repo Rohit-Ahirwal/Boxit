@@ -1,8 +1,8 @@
 # Boxit
 tool for clean Inbox make neet and clean Inbox by some clicks
 ## Note
-This tool run on python3 if you use python or python2 you can get errors
-## Installation
+This tool run on python3 if you use python or python2 you may get errors
+## Installation on TERMUX
 first update termux and which terminal you use by command
 ```
 apt update
